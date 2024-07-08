@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+body {
+  font-family: "Merriweather", serif;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,34 +9,72 @@
 }
 
 /* Banner Design */
-main {
-  width: 1320px;
-  margin: 50px auto;
-}
 .banner {
   height: 600px;
+  width: 1320px;
+  margin: 50px auto;
   border-radius: 16px;
+  /* Type 1 of adding background and adding color on it */
+  /* background-color: rgba(0, 0, 0, 0.5);
+  background-image: url("../images/Banner-Image.png");
+  background-blend-mode: overlay; */
+
+  /* Type 2 linear gradient of adding background and color on it */
   background: linear-gradient(
       180deg,
       rgba(7, 2, 17, 0.96),
       rgba(7, 2, 17, 0) 100%
     ),
     url("../images/Banner-Image.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+  text-align: center;
+}
 
+.banner p {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.banner h1 {
+  font-size: 72px;
+  font-weight: 700;
+}
+
+/* Offer Card */
+.offer-card {
+  height: 806px;
+  width: 803px;
+  margin: 120px auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-
-.banner-greetings {
-  font-size: 32px;
-  font-weight: 400;
-  color: #ffffff;
+.offer-card h1 {
+  color: rgb(255, 0, 0);
+  font-family: Inter;
+  font-size: 88px;
+  margin-bottom: 48px;
 }
-
-.banner-offer {
-  font-size: 72px;
+.offer-card p {
+  color: rgb(255, 0, 0);
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.offer-card h3 {
+  color: rgb(7, 2, 17);
+  font-family: Inter;
+  font-size: 48px;
   font-weight: 700;
-  color: #ffffff;
+}
+.offer-card img {
+  margin-top: 48px;
+  width: 803px;
+  height: 500px;
 }
