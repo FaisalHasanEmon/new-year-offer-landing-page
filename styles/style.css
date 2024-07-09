@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 body {
   font-family: "Merriweather", serif;
 }
@@ -84,7 +85,6 @@ body {
   width: 1320px;
   height: 600px;
   margin: 0 auto;
-  border: 1px solid red;
   border-radius: 16px;
   background: linear-gradient(90deg, rgb(7, 2, 17), rgba(7, 2, 17, 0) 100%),
     url("../images/Vectorrr.png");
@@ -126,4 +126,51 @@ body {
   border: none;
   background-color: transparent;
   margin-left: 15px;
+}
+
+/* Place Section Style */
+.place {
+  width: 1320px;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 120px;
+  border-radius: 16px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 246, 204, 0.96),
+    rgba(7, 2, 17, 0) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.place-container {
+  height: 242px;
+  width: 549px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.place-container p {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 56px;
+}
+.red {
+  color: red;
+}
+.place-container button {
+  margin-top: 50px;
+  width: 167px;
+  height: 56px;
+  border-radius: 8px;
+  border: none;
+  background: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
 }
