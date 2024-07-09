@@ -310,3 +310,33 @@ body {
   margin-top: 22px;
   margin-bottom: 22px;
 }
+
+/* 50% Box Offer Section */
+.box-offer {
+  width: 1320px;
+  height: 662px;
+  /* border: 1px solid black; */
+  margin: 0 auto;
+  margin-top: 64px;
+  background-image: url("../images/Rectangle-2.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.box-offer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box-offer-content .content-column1 {
+  width: 796px;
+  height: 662px;
+  /* border: 1px solid red; */
+}
+.box-offer-content .content-column2 {
+  width: 305.69px;
+  height: 305.69px;
+  /* border: 1px solid yellow; */
+  margin-top: 77px;
+  margin-bottom: 279px;
+}
